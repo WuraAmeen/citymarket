@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AR Treasure Hunt - Scene 1</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin: 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+        <!-- Marker definition -->
+        <a-marker preset="hiro">
+            <!-- 3D object (a red box) -->
+            <a-box position="0 0.5 0" material="color: red;"></a-box>
+            <!-- Clue Text -->
+            <a-text value="Clue: Go to the cereal aisle for your next clue!" 
+                    position="-0.75 1 0" scale="2 2 2" color="#FFFFFF"></a-text>
+        </a-marker>
+        <!-- Camera -->
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>

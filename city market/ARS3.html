@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AR Treasure Hunt - Final Scene</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin: 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+        <!-- Marker definition -->
+        <a-marker preset="hiro">
+            <!-- Congratulatory Text -->
+            <a-text value="Congratulations! You've completed the treasure hunt!"
+                    position="-1 1 0" scale="2 2 2" color="#00FF00"></a-text>
+            <!-- Virtual Prize (Golden Torus) -->
+            <a-torus position="0 0.5 0" radius="0.5" tube="0.1" material="color: gold;"></a-torus>
+        </a-marker>
+        <!-- Camera -->
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
